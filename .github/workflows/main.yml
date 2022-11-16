@@ -20,7 +20,7 @@ jobs:
           ./demo_gha.R
       - run: ls -lah
       - run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.name "Matt Bannert"
           git config --global user.email "noreply@devops-carpentry.github.io"
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git commit -a -m "Update README"
           git push
