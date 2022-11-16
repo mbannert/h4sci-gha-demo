@@ -19,11 +19,9 @@ jobs:
           chmod +x demo_gha.R
           ./demo_gha.R
       - run: ls -lah
-        env:
-          CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
       - run: |
           git config --global --add safe.directory /__w/h4sci-gha-demo/h4sci-gha-demo
           git config --global user.name "Matt Bannert"
           git config --global user.email "mbannert@users.noreply.github.com"
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git commit -a -m "Update README.md"
           git push
