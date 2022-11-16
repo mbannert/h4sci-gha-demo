@@ -2,7 +2,9 @@
 output: md_document
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 # GitHub Actions Demo
 
@@ -15,17 +17,12 @@ We stop short of creating HTML documents as GitHub renders markdown by default. 
 
 ## KOF Economic Barometer
 
-
-```r
+```{r, message=FALSE, warning=FALSE}
 library(kofdata)
 library(tsbox)
 
 tsl <- get_time_series("ch.kof.barometer")
 ts_plot(tsl$ch.kof.barometer)
-```
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
-
-```r
 message(sprintf("last update on %s.", as.character(Sys.Date())))
 ```
