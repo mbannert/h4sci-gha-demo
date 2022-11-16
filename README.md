@@ -24,5 +24,12 @@ ts_plot(tsl$ch.kof.barometer)
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
 
 ```r
-message(sprintf("last update on %s.", as.character(Sys.Date())))
+cat(sprintf("last update on %s.", as.character(Sys.Date())))
 ```
+
+```
+## last update on 2022-11-16.
+```
+
+
+
