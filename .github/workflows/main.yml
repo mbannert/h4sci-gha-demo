@@ -16,6 +16,6 @@ jobs:
       - run: rm -rf README.md
       - run: |
           Rscript -e 'install.packages(c("kofdata","tsbox"))'
-          chmod +x
+          chmod +x demo_gha.R
           ./demo_gha.R
       - run: ls -lah
