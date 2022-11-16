@@ -21,5 +21,8 @@ library(tsbox)
 tsl <- get_time_series("ch.kof.barometer")
 ts_plot(tsl$ch.kof.barometer)
 
-message(sprintf("last update on %s.", as.character(Sys.Date())))
+cat(sprintf("last update on %s.", as.character(Sys.Date())))
 ```
+
+
+
