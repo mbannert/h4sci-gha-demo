@@ -13,7 +13,7 @@ We stop short of creating HTML documents as GitHub renders markdown by default. 
 ## KOF Economic Barometer
 
 
-```r
+``` r
 library(kofdata)
 library(tsbox)
 
@@ -23,12 +23,12 @@ ts_plot(tsl$ch.kof.barometer)
 
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
 
-```r
+``` r
 cat(sprintf("last update on %s.", as.character(Sys.Date())))
 ```
 
 ```
-## last update on 2022-11-18.
+## last update on 2024-09-20.
 ```
 
 
